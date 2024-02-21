@@ -1,0 +1,26 @@
+.MainLayout {
+    &__conent {
+        height: calc(100vh - 80px);
+        overflow: hidden;
+        padding-top: 10px;
+
+        &:hover {
+            overflow: auto;
+        }
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+    }
+}
