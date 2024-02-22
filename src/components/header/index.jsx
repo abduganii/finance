@@ -99,9 +99,11 @@ export default function HeaderUI({ setCollapsed, collapsed, colorBgContainer }) 
           ))}
        
           </div>
-          <button className={cls.Header__add} onClick={()=> setSearchParams({ ...paramsToObject(params.entries()), opneMadal: true })}>
+        {
+          pathname.pathname != "/category" &&  pathname.pathname != "/budget"  ?
+          <button className={cls.Header__add} onClick={() => setSearchParams({ ...paramsToObject(params.entries()), opneMadal: true })}>
           Добавить
-          </button>
+          </button>:""}
         </>:""
        
       }

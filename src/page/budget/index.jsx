@@ -28,7 +28,7 @@ export default function BudgetPage() {
       </Space.Compact>
 
       {anount ? <>
-        <h3>YOUR BUDGET WAS  { anount}$</h3>
+        <h3>YOUR BUDGET WAS  {anount}$</h3>
         <h3>YOU GET  { totalAmount}$</h3>
         <h3>YOUR spend  { totalAmount1}$</h3>
         <h3>NOW YOU HAVE { anount - totalAmount1 + totalAmount}$ </h3>
